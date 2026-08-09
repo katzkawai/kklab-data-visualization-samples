@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>データビジュアライゼーション サンプル</title>
+  <style>
+    body {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+      line-height: 1.7;
+      color: #333;
+    }
+    h1 { border-bottom: 2px solid #ddd; padding-bottom: 0.5rem; }
+    .chart-container { margin: 2rem 0; }
+    .source { font-size: 0.85rem; color: #666; }
+    footer { margin-top: 3rem; font-size: 0.85rem; color: #666; border-top: 1px solid #ddd; padding-top: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>データビジュアライゼーション サンプル</h1>
+  <p>
+    公開データのサンプルスクリプトで取得したデータを可視化したページです。
+    データ取得の手順はリポジトリ内のチュートリアルを参照してください。
+  </p>
+
+  <h2>一人当たりGDPの推移(World Bank Open Data)</h2>
+  <div class="chart-container">
+    <canvas id="gdpChart"></canvas>
+  </div>
+  <p class="source">
+    出典: <a href="https://data.worldbank.org/">World Bank Open Data</a>
+    (指標: NY.GDP.PCAP.CD、CC BY 4.0)
+  </p>
+
+  <h2>平均寿命の推移(Our World in Data)</h2>
+  <div class="chart-container">
+    <canvas id="lifeChart"></canvas>
+  </div>
+  <p class="source">
+    出典: <a href="https://ourworldindata.org/">Our World in Data</a>
+    (グラフ: life-expectancy、CC BY 4.0)
+  </p>
+
+  <footer>
+    <p>
+      データは <code>samples/</code> ディレクトリのスクリプトで取得したCSVを使用しています。
+    </p>
+    <ul>
+      <li><a href="world-bank-open-data-tutorial.md">World Bank Open Data チュートリアル</a></li>
+      <li><a href="our-world-in-data-tutorial.md">Our World in Data チュートリアル</a></li>
+      <li><a href="e-stat-tutorial.md">e-Stat チュートリアル</a></li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -110,4 +110,6 @@ print(df.head())
 
 - [データビジュアライゼーションとは](data-visualization.md)
 - [Our World in Data チュートリアル](our-world-in-data-tutorial.md)
+- [e-Stat チュートリアル](e-stat-tutorial.md)
+- サンプルスクリプト: [samples/world-bank-open-data/](samples/world-bank-open-data/)
 - 公式APIドキュメント: <https://datahelpdesk.worldbank.org/knowledgebase/topics/125589-developer-information>
